@@ -3,14 +3,14 @@
 Tässä esimerkissä luodaan pysyvä verkkosivu. Amazonin Yksinkertaista Tietovarasto Palvelua (Amazon S3) käytetään tietovarastona kaikelle tietoudelle, joista pysyvä verkkosivu koostuu: HTML-tiedostoille, kuville, CSS-määrittelyille, videoille ja JavaScript-koodille. Jokainen tietue varastoidaan Amazon S3:een objektina, paikkaan jota kutsutaan ämpäriksi.
 
 Tämä ohjeistus käsittää:
--Ämpärin luonnin
--Ämpärin määrittelyn
--Verkkosivun levityksen
--Siivouksen
+- Ämpärin luonnin
+- Ämpärin määrittelyn
+- Verkkosivun levityksen
+- Siivouksen
 
 Yksinkertaisuuden vuoksi tässä ohjeistuksessa ei luoda sivustolle pysyvää toimialuenimeä. Tätä varten vaadittaisiin ainakin:
--Toimialuenimen rekisteröinti
--Sen liittäminen sivustoon
+- Toimialuenimen rekisteröinti
+- Sen liittäminen sivustoon
 
 ## Esivalmistelut
 
