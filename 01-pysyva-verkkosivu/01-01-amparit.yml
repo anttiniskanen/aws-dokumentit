@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: esimerkki-ampari
+      s3_bucket:
+         name: esimerkki.fi
+         region: eu-west-1
+      register: s3_bucket
+    - name: esimerkki-www-ampari
+      s3_bucket:
+         name: www.esimerkki.fi
+         region: eu-west-1
+      register: s3_bucket
+    - name: esimerkki-logs-ampari
+      s3_bucket:
+         name: logs.esimerkki.fi
+         region: eu-west-1
+      register: s3_bucket
