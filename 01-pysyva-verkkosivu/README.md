@@ -1,4 +1,4 @@
-# Pysyva verkkosivu
+# Pysyvä verkkosivu
 
 Tässä esimerkissä luodaan pysyvä verkkosivu. Amazonin Yksinkertaista Tietovarasto Palvelua (Amazon S3) käytetään tietovarastona kaikelle tietoudelle, joista pysyvä verkkosivu koostuu: HTML-tiedostoille, kuville, CSS-määrittelyille, videoille ja JavaScript-koodille. Jokainen tietue varastoidaan Amazon S3:een objektina, paikkaan jota kutsutaan ämpäriksi.
 
@@ -18,7 +18,7 @@ Ansible sisältää valmiin kokoelman moduuleja AWS-ympäristön hallintaan. Tä
 
 Ansiblen AWS-moduulit vaativat Pythonin boto-paketin. Ainakin tämä pitää siis olla asennettuna järjestelmässä, josta Ansiblea ohjataan. Boton voi asentaa komentamalla `pip install boto` (jos tätä ei löydy, voi yrittää vaikkapa `apt install python-pip`...).
 
-Tavallisesti Ansible-moduuleja suoritetaan yksittäisiä koneita tai koneryhmiä vastaan. Pilvipalveluja ohjaavat toimenpiteet suoritetaan kuitenkin paikallisessaa järjestelmässä (`localhost`), joten ainakaan tässä esimerkissä ei tarvise huolehtia Ansiblen hosts-tiedostosta ym. inventaarion yksityiskohdista.
+Tavallisesti Ansible-moduuleja suoritetaan yksittäisiä koneita tai koneryhmiä vastaan. Pilvipalveluja ohjaavat toimenpiteet suoritetaan kuitenkin paikallisessa järjestelmässä (`localhost`), joten ainakaan tässä esimerkissä ei tarvise huolehtia Ansiblen hosts-tiedostosta ym. inventaarion yksityiskohdista.
 
 Käyttäjän henkilöyden todennus pilvipalvelujen automatisoinnissa onnistuu käyttäjätiliin liitetyn avaimen tunnisteella ja siihen liittyvällä salaisella osalla. Nämä voi paljastaa Ansiblelle esimerkiksi ympäristömuuttujina:
 ```
